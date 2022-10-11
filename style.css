@@ -1,0 +1,138 @@
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+
+}
+
+:root {
+	__myfont:  'mulish', sans-serif;
+	__my-btn-font: 'monsrserrat', sans-serif;
+	__lg-lightcolor:  linear-gradient(to left, rgb(116, 235, 0.6), rgba(159, 172, 230, 0));
+	__lgcolor: linear-gradian(to left, #74ebd5, #face6);
+}
+
+body {
+	background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-White-Pattern-Background-Image.jpg);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: var(--myfont);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width:100% ;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+	--webkit-border-radius: 10px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.0px rgb(0, 0, 0.23);
+	overflow: hidden;
+	width: calc(100vw - 65vw);
+	max-height: 100%;
+}
+.header {
+	background: var(--lgcolor);
+	padding: 30px 0;
+}
+
+.header h2 {
+	color: #222;
+	font-family: var(--my-btn-font);
+	fint-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.form{
+	padding: 40px;
+}
+.form-control{
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.form-contro label{
+	display: inline-block;
+	margin-bottom: 5px;
+
+}
+
+.form-control input{
+	width: 100%;
+	border: 2px solid#f0f0f0;
+	border-radius: 5px;
+	display: block;
+	font-family: var(--myfont);
+	font-size: 14px;
+	padding: 12px;
+}
+
+.form-control inut:focus{
+	outine: 0;
+	border-color: #777;
+}
+
+.form-control.succes input{
+	borddr-color: #2ecc71;
+}
+
+.form-control.erro input{
+	borddr-color: #e74c3c;
+}
+
+.form-control
+.form-control i {
+	position: absolute;
+	right: 8px;
+	top: 38px;
+	visibility: hidden;
+
+}
+
+.form-controli.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-controli.fa-exclamation-circle {
+	color: #e743c;
+	visibility: visible;
+}
+
+
+.form-control small {
+	visibility: :hidden;
+}
+.form .btn {
+	background: var(--lg-color);
+	border-redius: 6px;
+	border: none;
+	color: #fff;
+	display: block;
+	font-family: var(--my-btn-font);
+	font-size: 16px;
+	padding: 15px 0;
+	margin-top: 20px;
+	width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all is ease;
+}
+
+.form .btn:hover {
+	background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+@media(max-width: 998px) {
+ .container {
+ 	width: calc(100vw - 35vw);
+ 	max-width: 100%;
+ }
+}
